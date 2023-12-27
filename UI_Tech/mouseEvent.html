@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Home Page</h1>
+    <button onmouseover="mouseOver()">Mouse Over</button>
+    <button onmouseout="mouseOut()">Mouse Out</button>
+    <button onmouseover="changeBackgroundColor()" onmouseout="changeBackgroundColorTwo()">Change Color</button>
+
+    <script>
+        function mouseOver() {
+            alert("Tyepe any data")
+        }
+
+        function mouseOut(){
+            confirm("Can you to change data")
+        }
+
+        function changeBackgroundColor(){
+            document.bgColor="orange";
+        }
+    
+        function changeBackgroundColorTwo(){
+            document.bgColor="brown";
+        }
+        
+
+
+
+    </script>
+</body>
+</html>

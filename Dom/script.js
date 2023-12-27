@@ -1,7 +1,7 @@
 var counter = document.querySelector(".counter");
 var followers = document.querySelector(".followers");
 
-let count = 1;
+let count = 0;
 
 setInterval( ()=>{
    if(count < 1000){ 
@@ -11,5 +11,5 @@ setInterval( ()=>{
 },1 );
 
 setTimeout( () => {
-    followers.innerText = "Followers in Instagram"
+    followers.innerText = "Congratulations...🎉 Your 1000 Followers in Instagram completed"
 }, 6000)

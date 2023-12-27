@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #output{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="output" onmouseover="changeBackGroundColor()"><img onmouseover="changeBackGroundColor()" onmouseout="removeColor()" height="200px" width="200px" src="https://imgs.search.brave.com/ZWDPPaQK4o0Liv4dgYvNHrPe97trHXH-FfLlJxpw2ZQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xMDAxMDk0/LzM2OTYvaS80NTAv/ZGVwb3NpdHBob3Rv/c18zNjk2NjQ4My1z/dG9jay1waG90by1l/bGVnYW50LXlvdW5n/LWhhbmRzb21lLW1h/bi1zdHVkaW8uanBn" alt=""></div>
+
+    <script>
+        function changeBackGroundColor(){
+            document.getElementById('output').style.backgroundColor = "red";
+            document.getElementById('output').style.borderRadius = "0px 40px";
+        }
+
+        function removeColor(){
+            document.getElementById('output').style.backgroundColor = "orange";
+            document.getElementById('output').style.borderRadius = "0px";
+            document.getElementById('output').style.border = "10px blue solid";    
+        }
+    </script>
+</body>
+</html>
