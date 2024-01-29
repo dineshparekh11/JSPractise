@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">Interview Question</div>
+
+    <script>
+
+        // escape() and unescape()
+
+        // console.log(escape("Hello' How are you?, we meet 'yesterday'!"));
+        // console.log(unescape("Hello%27%20How%20are%20you%3F%2C%20we%20meet%20%27yesterday%27%21"));
+        
+        // Multiline 
+        
+        // let str = `This is first line
+        //             This is second line`;
+        // str = str + 'This is third line';
+
+
+        // Unique value fateching
+
+        // const someArray = ['a','b','a','c','b','d'];
+        // const uniqueValue = [...new Set(someArray)];
+        // console.log(uniqueValue);
+        
+        const testValues =  ['10','20','40','30','50','60'];
+        const lengthValue =  testValues.every(checkTax);
+        function checkTax(val){
+            return val >= 30;
+        }
+        console.log(lengthValue);
+
+
+    </script>
+
+</body>
+</html>
